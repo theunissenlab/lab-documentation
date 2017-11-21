@@ -37,3 +37,13 @@ The keys are created in the directory `/keys`. Copy the new keys from zebra to y
 ```scp ubuntu@169.229.219.171:/keys/<USERNAME>_keys.tar.gz .```
 
 Send these keys to the user, who can load the file config.ovpn using TunnelBlick (Mac) or the default networkmanager openvpn client (Linux).
+
+## Troubleshooting
+
+### Login loop after rebooting
+
+* Press Ctrl-Alt-F1. If `/auto/fhome/` is not accessible, run the command `sudo service autofs restart`
+
+### Reset LDAP user password
+
+* From root (ubuntu) user on *zebra*, run `sudo ldapsetpasswd USERNAME`
