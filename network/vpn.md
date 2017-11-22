@@ -1,12 +1,14 @@
 # Connecting to the lab VPN
 
+Connecting to the lab VPN (virtual private network) lets you access the lab network (computers, data on tdrive) from the comfort of your own laptop or home computer.
+
 Setting up VPN access requires a couple things:
 
-* generating a password protected RSA key on **zebra**
+* generating a password protected RSA key on **zebra**, which is the gateway of the VPN
 
-* setting up the openvpn configuration on your laptop or home pc
+* setting up the vpn configuration on your laptop or home pc
 
-The first step requires you to have access to ubuntu@**zebra**. If you don't have access, ask someone who does (Frederic, Kevin, Bill, Julie) to follow the instructions in the "Generating keys" section. When that is done, you should have configuration files in a form that looks like "USERNAME_keys.tar.gz", and can go onto the section "Setting up vpn configuration".
+The first step requires you to have access to ubuntu@zebra. If you don't have access, ask someone who does (Frederic, Kevin, Bill, Julie) to follow the instructions in the "Generating keys" section. When that is done, you should have configuration files in a form that looks like "USERNAME_keys.tar.gz", and can go onto the section "Setting up vpn configuration".
 
 ## Generating keys
 
