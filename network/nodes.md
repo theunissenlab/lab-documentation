@@ -49,3 +49,7 @@ Connect by `ssh USERNAME@HOSTNAME` while on the network or VPN.
 #### Runs 
 
 * autofs (`autofs-ldap`): automatically mounts directories by looking to the ldap server (defined in `/etc/ldap.conf`). The ldap server `ldap` currently points to 10.0.1.11 which is **zebra**'s current ip.
+
+#### Troubleshooting
+
+* When tdrive and/or fhome are not accessible, check network connection and try `sudo service autofs restart`
