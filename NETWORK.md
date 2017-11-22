@@ -16,7 +16,7 @@ store data on it
 
 ### What is fhome?
 
-users home directories
+users home directories. dont store data in fhome because there isnt much space! store data in tdrive!
 
 ## Setting up a new computer
 
