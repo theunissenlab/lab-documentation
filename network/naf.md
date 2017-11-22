@@ -5,7 +5,9 @@ The two computers in NAF are **pumpkin** and **chubbyninja**. They are connected
 The router is a virtual server for the 2 computers, and you can ssh to them by ssh-ing to the router at a particular port:
 
 router ip: 169.229.251.200
+
 pumpkin port: 65455
+
 chubbyninja port: 65454
 
 You can add this to your ssh config file
