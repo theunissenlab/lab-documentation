@@ -2,7 +2,7 @@ Documentation of specific nodes
 
 ### hostname: zebra (10.0.1.1)
 
-Located in colo. Hosts home directories and is connected by ethernet to internet and **tdrive**.
+Located in colo. Hosts home directories and is connected by ethernet to the internet and to **tdrive**. This computer is the gateway to the VPN.
 
 #### Connect
 
