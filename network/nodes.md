@@ -1,6 +1,6 @@
 Documentation of specific nodes
 
-### zebra (10.0.1.1)
+### hostname: zebra (10.0.1.1)
 
 Located in colo. Hosts home directories and is connected by ethernet to internet and **tdrive**.
 
@@ -18,7 +18,7 @@ Can only be accessed with key login (cannot log in with password), need public k
   
 * VPN (`openvpn`): vpn stuffs
   
-### finch (10.0.2.0/24)
+### hostname: finch (10.0.2.0/24)
 
 Located in LKS, basically is the network's DHCP and DNS server. When a new computer connects to the network, **finch** will assign it an IP and associate its hostname.
 
@@ -38,7 +38,7 @@ Not sure how to connect to **finch**, but I think its also key only login.
 
 Located in colo. Data server. How much spaces does it have?
 
-### goats, strfinator, sirius, quaint-produce, ... (10.0.2.x)
+### hostname(s): goats, strfinator, sirius, quaint-produce, ... (10.0.2.x)
 
 Regular ol computers. Can be accessed by key login or password. Directories fhome and tdrive should be automounted.
 
