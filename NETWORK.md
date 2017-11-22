@@ -44,7 +44,7 @@ The generated keys are created in the directory `/keys`. Copy the new keys from 
 
 ```scp ubuntu@169.229.219.171:/keys/<USERNAME>_keys.tar.gz .```
 
-Send these keys to the user, who can load the file config.ovpn using TunnelBlick (Mac) or the default networkmanager openvpn client (Linux).
+Send these keys to the user, who can load the file config.ovpn using [TunnelBlick](https://tunnelblick.net/) (Mac) or the default networkmanager openvpn client (Linux).
 
 Once connected to the VPN, nodes can be accessed by their domain names (e.g. *zebra*, *goats*, *strfinator*, ...)
 
