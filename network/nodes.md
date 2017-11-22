@@ -40,7 +40,7 @@ Located in colo. Data server. How much spaces does it have?
 
 ## goats, strfinator, sirius, quaint-produce, ... (10.0.2.x)
 
-Regular ol computers. Can be accessed by key login or password. Directories fhome and tdrive should be automounted.
+Regular ol computers located in LKS, connected by ethernet to and assigned ip addresses by **finch**. Can be accessed by key login or password. When on these computers, fhome and tdrive should be automounted when accessing `/auto/fhome` and `/auto/tdrive` respectively.
 
 #### Connect
 
