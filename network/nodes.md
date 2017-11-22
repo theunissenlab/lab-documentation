@@ -2,9 +2,13 @@ Documentation of specific nodes
 
 ### zebra (10.0.1.1)
 
-Located in colo. Hosts home directories and is connected by ethernet to internet and **tdrive**. Can only be accessed with key login (cannot log in with password), need public key to be added to authorized_keys.
+Located in colo. Hosts home directories and is connected by ethernet to internet and **tdrive**.
 
-Runs
+#### Connect
+
+Can only be accessed with key login (cannot log in with password), need public key to be added to authorized_keys. Connect as ubuntu user, through `ssh ubuntu@zebra` or `ssh ubuntu@169.229.219.171` when not on the network.
+
+#### Runs
 
 * IPsec (`strongSwan`): virtual connection between **zebra** and **finch**
   
@@ -18,7 +22,11 @@ Runs
 
 Located in LKS, basically is the network's DHCP and DNS server. When a new computer connects to the network, **finch** will assign it an IP and associate its hostname.
 
-Runs 
+#### Connect
+
+Not sure how to connect to **finch**, but I think its also key only login.
+
+#### Runs 
 
 * IPsec (`strongSwan`): virtual connection between **zebra** and **finch**
 
@@ -34,6 +42,10 @@ Located in colo. Data server. How much spaces does it have?
 
 Regular ol computers. Can be accessed by key login or password. Directories fhome and tdrive should be automounted.
 
-Runs 
+#### Connect
+
+Connect by `ssh USERNAME@HOSTNAME` while on the network or VPN.
+
+#### Runs 
 
 * autofs (`autofs-ldap`): automatically mounts directories by looking to the ldap server (defined in `/etc/ldap.conf`). The ldap server `ldap` currently points to 10.0.1.11 which is **zebra**'s current ip.
