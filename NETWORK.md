@@ -2,19 +2,24 @@
 
 ## Nodes
 
-*zebra, finch, sirius, strfinator, goats*
+*zebra* - located at colo, this is where `fhome` lives and is connected directly to `tdrive`
+
+*finch* - located in LKS, runs dhcp (assigns ip addresses to mac addresses), dns (maps domain names to ip addresses), IPsec (creates virtual link between *finch* and *zebra*)
+
+*sirius, strfinator, goats, ...* - individual computers
 
 ### tdrive
 
-What is tdrive and where is it?
+store data on it
 
 ### fhome
 
-What is fhome and where is it?
+users home directories
 
 ## Setting up a new computer
 
-1. ??
+1. Plug the computer into a ethernet port on our internal network (one of the 8 ports in LKS). *finch* assigns it an IP in the subnet.
+2. Copy the script `activate-netlogin.sh` from *zebra* (located at `home/ubuntu/actiate-netlogin.sh`) onto the new computer and run it.
 
 ## Setting up a new user
 
@@ -40,10 +45,10 @@ Send these keys to the user, who can load the file config.ovpn using TunnelBlick
 
 ## Troubleshooting
 
-### Login loop after rebooting
+### Login loop after rebooting or /auto/fhome not accessible
 
-* Press Ctrl-Alt-F1. If `/auto/fhome/` is not accessible, run the command `sudo service autofs restart`
+* Press Ctrl-Alt-F1 (or enter a shell). As the "ubuntu" user run the command `sudo service autofs restart`. This resolves a timing bug between when fhome is mounted and when the network becomes accessible.
 
 ### Reset LDAP user password
 
-* From root (ubuntu) user on *zebra*, run `sudo ldapsetpasswd USERNAME`
+* From ubuntu user on *zebra*, run `sudo ldapsetpasswd USERNAME`
