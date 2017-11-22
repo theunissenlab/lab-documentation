@@ -21,7 +21,8 @@ users home directories
 ## Setting up a new computer
 
 1. Plug the computer into a ethernet port on our internal network (one of the 8 ports in LKS). *finch* assigns it an IP in the subnet.
-2. Copy the script `activate-netlogin.sh` from *zebra* (located at `home/ubuntu/actiate-netlogin.sh`) onto the new computer and run it.
+2. Copy the script `activate-netlogin.sh` from *zebra* (located at `home/ubuntu/activate-netlogin.sh`) onto the new computer and run it.
+3. How do you give the new computer a hostname??
 
 ## Setting up a new user
 
