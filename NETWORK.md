@@ -37,13 +37,15 @@ $ cd easy-rsa
 $ ./makeuser USERNAME
 ```
 
-The makeuser script requires the creation of a password for the key, as well as another password?
+The `makeuser` script generates a password protected key. It will first ask for a password to encrypt the key with. The second password prompt is to unlock the secret key on *zebra*. This is a separate password.
 
-The keys are created in the directory `/keys`. Copy the new keys from zebra to your local computer
+The generated keys are created in the directory `/keys`. Copy the new keys from zebra to your local computer
 
 ```scp ubuntu@169.229.219.171:/keys/<USERNAME>_keys.tar.gz .```
 
 Send these keys to the user, who can load the file config.ovpn using TunnelBlick (Mac) or the default networkmanager openvpn client (Linux).
+
+Once connected to the VPN, nodes can be accessed by their domain names (e.g. *zebra*, *goats*, *strfinator*, ...)
 
 ## Troubleshooting
 
