@@ -8,11 +8,13 @@
 
 *sirius, strfinator, goats, ...* - individual computers
 
-### tdrive
+*chubbyninja, pumpkin* - located in 125 NAF, these are not connected to the rest of the network
+
+### What is tdrive?
 
 store data on it
 
-### fhome
+### What is fhome?
 
 users home directories
 
