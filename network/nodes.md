@@ -1,6 +1,6 @@
 Documentation of specific nodes
 
-### hostname: zebra (10.0.1.1)
+## zebra (10.0.1.1)
 
 Located in colo. Hosts home directories and is connected by ethernet to the internet and to **tdrive**. This computer is the gateway to the VPN and is currently the LDAP server as well.
 
@@ -18,7 +18,7 @@ Can only be accessed with key login (cannot log in with password), need public k
   
 * VPN (`openvpn`): vpn stuffs
   
-### hostname: finch (10.0.2.0/24)
+## finch (10.0.2.0/24)
 
 Located in LKS, basically is the network's DHCP and DNS server. When a new computer connects to the network, **finch** will assign it an IP and associate its hostname.
 
@@ -34,11 +34,11 @@ Not sure how to connect to **finch**, but I think its also key only login.
 
 * DNS (`Bind9`): maps domain names to ip addresses
 
-### tdrive (10.0.1.203)
+## tdrive (10.0.1.203)
 
 Located in colo. Data server. How much spaces does it have?
 
-### hostname(s): goats, strfinator, sirius, quaint-produce, ... (10.0.2.x)
+## goats, strfinator, sirius, quaint-produce, ... (10.0.2.x)
 
 Regular ol computers. Can be accessed by key login or password. Directories fhome and tdrive should be automounted.
 
