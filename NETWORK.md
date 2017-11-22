@@ -29,7 +29,7 @@ users home directories
 
 ## Setting up VPN access for a user
 
-Connect to *zebra* as user `ubuntu` and use a helper script to generate keys for a user 
+Connect to *zebra* as user "ubuntu" and use a helper script to generate keys for a user 
 
 ```
 ssh ubuntu@169.229.219.171
