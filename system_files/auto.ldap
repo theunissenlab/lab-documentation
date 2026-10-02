@@ -1,0 +1,5 @@
+fhome   -fstype=nfs,hard,intr   10.0.2.3:/raid/data/_NAS_NFS_Exports_/homes/fethome/
+tdrive  -fstype=nfs,hard,intr   tdrive:/mnt/NAS/tdrive/tdrive
+zdrive  -fstype=nfs,hard,intr   zdrive:/volume1/zdrive
+
+
